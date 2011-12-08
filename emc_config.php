@@ -17,8 +17,11 @@
    // Servers to ping with your status
    $PING='';
    
+   //Track your location
+   $TRACKING = 1;
+   
 
-	//email settings
+   //email settings
    $SENDTO  ='test@abbiecod.es'; //email addresses to send notifies to, comma separated. 
    $FROM    ='test@abbiecod.es';
    $SUBJECT ="Test of emergency broadcast system";
