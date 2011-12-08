@@ -1,1 +1,13 @@
 Tools and snippets for a decentralized dispatch.
+
+Basic, very basic setup is-> phone app + receiver.
+
+Receiver is receiver.php + emc_config right now. Phone app sends "coordinate" to receiver. Receiver sends an email for you (this avoids low signal time taken up by authenticating places, etc.) Receiver will also set a token on the server.
+
+Set up is all on the user currently, but it should be simple to aggregate all these dispatches using the tokens (coming later).
+
+First steps: 
+- make the receiver and phone app work consistently.
+- Crossplatform the phone apps
+- Add true facebook and twitter support. Currently supported via email at the moment. 
+- Then plugins, etc.
