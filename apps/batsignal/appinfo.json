@@ -1,0 +1,9 @@
+{
+	"id": "com.antijingoist.batsignal",
+	"version": "0.0.1",
+	"vendor": "Antijingoist",
+	"type": "web",
+	"main": "index.html",
+	"title": "BatSignal!",
+	"icon": "icon.png"
+}
