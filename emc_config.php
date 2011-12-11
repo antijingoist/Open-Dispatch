@@ -1,4 +1,10 @@
 <?php
+
+//std settings. You can remove the ones you are not using. just make sure you know what you are doing.
+$GOOGLE_MAP_API = '<img src="http://maps.googleapis.com/maps/api/staticmap?center=%location%&zoom=11&size=200x200&sensor=false">';
+$BING_MAP_API   = '';
+$YAHOO_MAP_API  = '';
+
 //configs
 
 // Site Plugin Settings
@@ -13,6 +19,9 @@
    $NODEMODE=0;
    // Token notifies that you've pulled your trigger
    $TOKEN_FILE='tok.en';
+   // dispatch file name
+   $DISPATCH_CSV = './dispatch.csv';
+   $HISTORY_DAYS = '7';
    
    // Servers to ping with your status
    $PING='';
@@ -21,10 +30,11 @@
    $TRACKING = 1;
    
 
-   //email settings
-   $SENDTO  ='test@abbiecod.es'; //email addresses to send notifies to, comma separated. 
-   $FROM    ='test@abbiecod.es';
-   $SUBJECT ="Test of emergency broadcast system";
+   //email/message settings
+   $SENDTO  = 'test@abbiecod.es'; //email addresses to send notifies to, comma separated. 
+   $FROM    = 'test@abbiecod.es';
+   $SUBJECT = "Test of emergency broadcast system";
    $BODY    = $SUBJECT;
-   $PHONE   ='555-555-5555';
+   $PHONE   = '555-555-5555';
+   $MAP_API  = $GOOGLE_MAP_API;
 ?>

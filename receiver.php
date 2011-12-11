@@ -14,7 +14,9 @@
    
    if ($ping==1){
       $subject = $SUBJECT . " Call me: " . $PHONE . $location;
-      $body = $subject;
+      // include a Google/similar Map service for easy finding
+      $location_map = str_replace("%location%", $location, $MAP_API);
+      $body = $subject . $location_map;
       $header = "From:".$FROM;
       mail($SENDTO, $subject, $body, $header);
    }
