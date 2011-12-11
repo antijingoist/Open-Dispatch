@@ -4,7 +4,7 @@
    $location =  _INPUT('loc');
    $ping = _INPUT('ping');
    
-   if ($TRACKING){
+   if ($TRACKING == 1){
       if (!($data = fopen('./tracking.csv', 'a')))
          return;
       $dataline = "\"" . date("r") . "\"," . $location . "\n";
@@ -13,10 +13,10 @@
    }
    
    if ($ping==1){
-      $subject = $SUBJECT . " Call me: " . $PHONE . $location;
-      // include a Google/similar Map service for easy finding
       $location_map = str_replace("%location%", $location, $MAP_API);
-      $body = $subject . $location_map;
+      $subject = $SUBJECT . " " . $PHONE . ' ' . $location_map;
+      // include a Google/similar Map service for easy finding
+      $body = $subject;
       $header = "From:".$FROM;
       mail($SENDTO, $subject, $body, $header);
    }
