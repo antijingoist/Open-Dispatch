@@ -1,8 +1,8 @@
 <?php
    include 'emc_config.php';
 /* Grab Data from Smart Phone and place into CSV */
-   $location =  $_REQUEST['loc'];
-   $ping = $_REQUEST['ping'];
+   $location =  _INPUT('loc');
+   $ping = _INPUT('ping');
    
    if ($TRACKING){
       if (!($data = fopen('./tracking.csv', 'a')))

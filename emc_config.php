@@ -1,5 +1,6 @@
 <?php
-
+   include 'functions.php';
+   
 //std settings. You can remove the ones you are not using. just make sure you know what you are doing.
 $GOOGLE_MAP_API = '<img src="http://maps.googleapis.com/maps/api/staticmap?center=%location%&zoom=11&size=200x200&sensor=false">';
 $BING_MAP_API   = '';

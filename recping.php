@@ -14,12 +14,12 @@ Format:
 */
    include 'emc_config.php';
 
-   $usr = $_REQUEST['usr'];
-   $location = $REQUEST['location'];
+   $usr = _INPUT('usr');
+   $location = _INPUT('location');
 
-   $usr_message = $REQUEST['msg'];
-   $usr_key = $REQUEST['key'];
-   $usr_contact = $REQUEST['contact'];
+   $usr_message = _INPUT('msg');
+   $usr_key = _INPUT('key');
+   $usr_contact = _INPUT('contact');
 
    $date = date("r");
 
