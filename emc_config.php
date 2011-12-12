@@ -30,12 +30,19 @@ $YAHOO_MAP_API  = '';
    //Track your location
    $TRACKING = 1;
    
+   //Creating a message: use variables: %location%, %phone%, %map%
+   $MSG_BODY    = "I need help! You can call me at %phone%, and I am at %location%.\nHere is a map of where I am: %map%";
 
    //email/message settings
    $SENDTO  = 'test@abbiecod.es'; //email addresses to send notifies to, comma separated. 
    $FROM    = 'test@abbiecod.es';
    $SUBJECT = "Test of emergency broadcast system";
-   $BODY    = $SUBJECT;
    $PHONE   = '555-555-5555';
    $MAP_API  = $GOOGLE_MAP_API;
+
+/*********************************************************************
+ *      DO NOT EDIT BELOW THIS -generally speaking
+ *********************************************************************/
+ 
+   $MSG_BODY = str_replace('%phone%',$PHONE,$MSG_BODY);
 ?>

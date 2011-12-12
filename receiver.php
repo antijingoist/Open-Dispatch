@@ -15,8 +15,8 @@
    if ($ping==1){
       $location_map = str_replace("%location%", $location, $MAP_API);
       $subject = $SUBJECT . " " . $PHONE . ' ' . $location_map;
-      // include a Google/similar Map service for easy finding
-      $body = $subject;
+      $body = str_replace('%location%', $location, $MSG_BODY);
+      $body = str_replace('%map%',$location_map,$body);
       $header = "From:".$FROM;
       mail($SENDTO, $subject, $body, $header);
    }
