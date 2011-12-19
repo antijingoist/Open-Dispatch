@@ -1,0 +1,47 @@
+WordPress plugin
+for Open Dispatch receiver and Server
+
+Adds ability to send emergency messages to your blog at the addres: http: //yourblog.com/index.php?
+Also adds(will add) the ability to use your blog as a repeater,
+to pass along
+the messages of others in need.
+
+TODO: -make it work. - Display a banner on site when emergency notice is received - link to more information displaying path,
+maps,
+etc.
+
+- add repeater code. - servers / blogs to accept requests from - servers / blogs to send requests to - verify origin before repeating or displaying
+
+Usage: Maintains compatibility with basic receiver.php and recping.php.Any interface
+for those will work with this simply by changing server address.
+
+Additional functions, parameters:
+Everything below is TO BE IMPLEMENTED
+wpi_key: wordpress install key.User sets this key on their blog and client.
+         can be used to verify origin before posting,
+         or with usr_site to verify before repeating.
+
+usr_site: originating site for the distress signal.
+
+command: receive a command. ?command="" ie. ?command="beacon.isON"
+
+Available commands:
+
+   usr is only optionally made public when beacon.isON
+   usr.
+      profile: receive a user profile as a json. 
+               Alternatively: 
+               profile()
+                  name
+                  contact_type
+                  contact_info
+                  
+      location: last known location as coordiantes, with date/time
+
+   beacon.
+      isON:     Is user in an emergency situation or no? Boolean
+      isOFF:    The opposite, provided for convenience.
+      
+      location: options: current, incident.  
+      
+      
