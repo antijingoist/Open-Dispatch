@@ -11,3 +11,13 @@ First steps:
 - Crossplatform the phone apps
 - Add true facebook and twitter support. Currently supported via email at the moment. 
 - Then plugins, etc.
+
+
+Usage:
+
+Example:
+http://somethingwebsite.tld/receiver.php?loc=""&ping=1&messg="Help!"
+
+loc - string: lattidude and longitude together as one string, comma separated.
+ping - Boolean: 1 or 0. If true, sends brodcast message. Otherwise, just logs coordinates
+messg - string: Message override. Overrides message stored on server with this if included.
