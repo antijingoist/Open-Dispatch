@@ -34,8 +34,8 @@ $YAHOO_MAP_API  = '';
    $MSG_BODY    = "I need help! You can call me at %phone%, and I am at %location%.\nHere is a map of where I am: %map%";
 
    //email/message settings
-   $SENDTO  = 'test@abbiecod.es'; //email addresses to send notifies to, comma separated. 
-   $FROM    = 'test@abbiecod.es';
+   $SENDTO  = ''; //email addresses to send notifies to, comma separated. 
+   $FROM    = '';
    $SUBJECT = "Test of emergency broadcast system";
    $PHONE   = '555-555-5555';
    $MAP_API  = $GOOGLE_MAP_API;
