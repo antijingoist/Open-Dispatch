@@ -12,7 +12,7 @@
    }
 
    if (isset($location)) {
-      if (!strpos($location, "undefined", 1) {
+      if (!strpos($location, "undefined", 1)) {
          $send_location = 1;
       }else{
          $send_location = 0;
